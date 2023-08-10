@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+HOME="/root/"
 set -o errexit
 set -o nounset
 set -o pipefail
@@ -8,34 +9,34 @@ echo "https://github.com/BlueSkyXN/DNS-AUTO-Switch"
 echo "IP+1不好吗：https://www.blueskyxn.com"
 echo "BlueSkyXN：开始读取配置"
 # Ping API
-PING_API=http://IP:8080/ping
+PING_API=http://152.32.171.197:8080/ping
 echo "BlueSkyXN：Ping·API读取成功"
 #使用https://github.com/TorchPing/go-torch 自行搭建测试API 默认监听端口为8080 你也可以用域名反代 记得有/ping
 
 # Original IP 常规IP
-ORG_IP=1.1.1.1
+ORG_IP=101.89.219.1
 
 # Failure IP  失败后IP
-FAIL_IP=1.1.1.1
+FAIL_IP=146.190.52.3
 
 # Telegram Bot Token
-TG_BOT_TOKEN=1254xxxx:AxxxxxxxxxxxxY
+TG_BOT_TOKEN=6606798847:AAGvPHzazLtDBsG5ncOTrdRwr7JiD9q_GN8
 
 # Telegram Chat ID
-TG_CHATID=13xxxx741
+TG_CHATID=830547258
 
 # API key, see https://www.cloudflare.com/a/account/my-account,
 # incorrect api-key results in E_UNAUTH error
-CFKEY=d02732xxxxxxxxxxxxxxxxx689d80
+CFKEY=daa761e4d5c870a7f36913973be71ffffcfee
 
 # Username, eg: user@example.com
-CFUSER=xxxxxx@qq.com
+CFUSER=hadadreammm@gmail.com
 
 # Zone name, eg: example.com
-CFZONE_NAME=blueskyxn.com
+CFZONE_NAME=zzgpp.com
 
 # Hostname to update, eg: homeserver.example.com
-CFRECORD_NAME=www.blueskyxn.com
+CFRECORD_NAME=ggg.zzgpp.com
 
 # Record type, A(IPv4)|AAAA(IPv6), default IPv4
 CFRECORD_TYPE=A
